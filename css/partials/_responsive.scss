@@ -1,0 +1,22 @@
+$small: 350px;
+$medium: 768px;
+$large: 1050px;
+$height: 1200px;
+
+@mixin respond($media) {
+  @if $media == phone {
+    @media only screen and (max-width: $small) { @content; }
+  }
+  @else if $media == smart {
+    @media only screen and (min-width: $small + 1) and (max-width: $medium ) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $medium + 1) and (max-width: $large - 1) { @content; }
+  }
+  @else if $media == wide {
+    @media only screen and (min-width: $large) { @content; }
+  }
+  @else if $media == full {
+    @media only screen and (min-width: $large +1) and (max-width: $height){ @content; }
+  }
+}
