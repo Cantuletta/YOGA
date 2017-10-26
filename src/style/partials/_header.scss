@@ -1,0 +1,16 @@
+.background-header {
+  background-color: #fff;
+  height: auto;
+
+  .menu-left-header {
+    display: inline-block;
+    width: 33.33%;
+
+    ul {
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
