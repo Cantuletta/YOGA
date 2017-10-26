@@ -2,14 +2,66 @@
   background-color: #fff;
   height: auto;
 
-  .menu-left-header {
-    display: inline-block;
-    width: 33.33%;
+  .menu-all-header {
 
-    ul {
 
-      li {
-        list-style: none;
+    .menu-left-header {
+      display: inline-block;
+      width: 33.33%;
+      float: left;
+
+
+      ul {
+
+        li {
+          font-family: "Open Sans Semibold", Arial, sans-serif;
+          list-style: none;
+          display: inline-block;
+          font-size: 14pt;
+          color: #555555;
+          padding: 0 15px;
+
+          a {
+            text-decoration: none;
+            color: #555555;
+          }
+        }
+      }
+    }
+
+    .logo-center-header {
+      display: inline-block;
+      width: 33.33%;
+      text-align: center;
+
+      h1 {
+        font-family: "Champagne&Limousines",Arial,sans-serif;
+        font-size: 24pt;
+        color: #5363db;
+      }
+    }
+
+    .menu-right-header {
+      display: inline-block;
+      width: 33.33%;
+      float: right;
+
+
+      ul {
+
+        li {
+          font-family: "Open Sans Semibold", Arial, sans-serif;
+          list-style: none;
+          display: inline-block;
+          font-size: 14pt;
+          color: #555555;
+          padding: 0 15px;
+
+          a {
+            text-decoration: none;
+            color: #555555;
+          }
+        }
       }
     }
   }
