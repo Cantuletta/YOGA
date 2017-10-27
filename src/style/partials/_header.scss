@@ -21,7 +21,7 @@
           font-family: "Open Sans Semibold", Arial, sans-serif;
           list-style: none;
           display: inline-block;
-          font-size: 14pt;
+          font-size: 14px;
           color: #555555;
           padding: 0 15px;
 
@@ -46,7 +46,7 @@
 
       h1 {
         font-family: "Champagne&Limousines",Arial,sans-serif;
-        font-size: 24pt;
+        font-size: 24px;
         color: #5363db;
         margin: 0;
       }
@@ -66,7 +66,7 @@
           font-family: "Open Sans Semibold", Arial, sans-serif;
           list-style: none;
           display: inline-block;
-          font-size: 14pt;
+          font-size: 14px;
           color: #555555;
           padding: 0 15px;
 
@@ -90,9 +90,123 @@
   height: auto;
   background: url("../img/background-header.jpg") no-repeat;
   background-size: cover;
-  background-position: 0 100px;
+  background-position: -290px 55px;
 
   .background-info-header-two {
     padding-top: 110px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+
+    .communications-header-two {
+      width: 50%;
+      position: relative;
+      min-height: 1px;
+      float: left;
+      box-sizing: border-box;
+      padding: 50px 15px;
+
+      @include respond(smart) {
+        width: 100%;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+      }
+
+      .back-all-in {
+        background-color: #fff;
+        width: 330px;
+        height: 370px;
+        border-radius: 30px;
+        display: inline-block;
+      }
+
+      h3 {
+        font-family: "Open Sans Semibold",Arial,sans-serif;
+        font-size: 26px;
+        color: #5363db;
+        padding-top: 50px;
+      }
+
+      .input-style {
+        font-family: "Open Sans Regular",Arial,sans-serif;
+        color: #888;
+        font-size: 14px;
+        background-color: #f2f2f2;
+        display: inline-block;
+        width: 235px;
+        height: 45px;
+        border: none;
+        margin: 10px 0;
+        border-radius: 10px;
+        padding: 0 10px;
+      }
+
+      .but-style {
+        display: inline-block;
+        width: 234px;
+        padding-top: 15px;
+      }
+
+      .ntb {
+        font-family: "Open Sans Bold",Arial,sans-serif;
+        font-size: 16px;
+        width: 150px;
+        float: right;
+        height: 45px;
+        border-radius: 10px;
+        border: none;
+        background-color: #5b6ceb;
+        color: #fff;
+      }
+    }
+
+    .text-header-two {
+      width: 50%;
+      position: relative;
+      min-height: 1px;
+      padding-right: 15px;
+      padding-left: 15px;
+      float: left;
+      box-sizing: border-box;
+      text-align: left;
+      padding-top: 105px;
+
+      @include respond(smart) {
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+        text-align: center;
+        padding-top: 0;
+      }
+
+      h1 {
+        font-family: "Open Sans Bold",Arial,sans-serif;
+        font-size: 48px;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      h2 {
+        font-family: "Open Sans Bold",Arial,sans-serif;
+        font-size: 48px;
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+
+      p {
+        font-family: "Freestyle Script",Arial,sans-serif;
+        font-size: 40px;
+        color: #fff;
+      }
+    }
+
   }
 }
