@@ -6,7 +6,7 @@
     text-align: center;
 
     h1 {
-      font-family: "Open Sans Bold",Arial,sans-serif;
+      font-family: "Open Sans Bold", Arial, sans-serif;
       font-size: 30px;
       color: #5b6ceb;
       text-transform: uppercase;
@@ -14,7 +14,7 @@
     }
 
     p {
-      font-family: "Freestyle Script",Arial,sans-serif;
+      font-family: "Freestyle Script", Arial, sans-serif;
       font-size: 41px;
       color: #777;
     }
@@ -35,8 +35,12 @@
       background-color: #fff;
       margin: 10px 0;
 
+      @include respond(phone) {
+        width: 100%;
+      }
+
       h1 {
-        font-family: "Open Sans Bold",Arial,sans-serif;
+        font-family: "Open Sans Bold", Arial, sans-serif;
         font-size: 20px;
         color: #777;
         text-transform: uppercase;
@@ -46,7 +50,7 @@
         padding-top: 50px;
 
         li {
-          font-family: "Open Sans Regular",Arial,sans-serif;
+          font-family: "Open Sans Regular", Arial, sans-serif;
           color: #555;
           font-size: 14px;
           line-height: 22px;
@@ -54,7 +58,7 @@
       }
 
       p {
-        font-family: "Open Sans Regular",Arial,sans-serif;
+        font-family: "Open Sans Regular", Arial, sans-serif;
         font-size: 14px;
         color: #999;
         padding-top: 25px;
@@ -69,17 +73,30 @@
     }
   }
 
-  .feature-two {
-    box-sizing: border-box;
-    text-align: center;
+  .gallery-content {
+    padding-top: 100px;
+  }
 
-    .block-feature-three {
-      width: 25%;
+    .feature-two {
       box-sizing: border-box;
-      float: left;
-      position: relative;
-      padding-right: 15px;
-      padding-left: 15px;
+      text-align: center;
+      display: inline-block;
+
+      .block-gallery {
+        width: 25%;
+        box-sizing: border-box;
+        float: left;
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        @include respond(smart) {
+          width: 50%;
+        }
+
+        @include respond(phone) {
+          width: 100%;
+        }
+      }
     }
   }
-}
