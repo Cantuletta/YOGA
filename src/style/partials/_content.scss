@@ -187,9 +187,10 @@
         position: relative;
         padding-right: 15px;
         padding-left: 15px;
+        padding-bottom: 15px;
 
         @include respond(smart) {
-          width: 50%;
+          width: 100%;
         }
 
         @include respond(phone) {
