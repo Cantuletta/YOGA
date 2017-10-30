@@ -15,20 +15,20 @@
     <div class="menu-all-header">
     <div class="menu-left-header">
         <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Reservation</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#gallery">Gallery</a></li>
         </ul>
     </div>
     <div class="logo-center-header">
-        <img src="../img/logo.png">
+        <img src="./img/logo.png">
         <h1>YOGA</h1>
     </div>
     <div class="menu-right-header">
         <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Elements</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#elements">Elements</a></li>
+            <li><a href="#shop">Shop</a></li>
         </ul>
     </div>
     </div>
@@ -36,21 +36,23 @@
     </nav>
 </div>
 
-    <div class="background-header-two">
+    <div class="background-header-two" id="reservation">
         <div class="background-info-header-two">
             <div class="communications-header-two">
                 <div class="back-all-in">
                 <h3>Trial Class</h3>
-                <form class="form-inline">
-                <input type="text" class="input-small input-style" placeholder="Enter your name">
-                <input type="tel" class="input-small input-style" placeholder="Enter your phone">
-                <select class="input-style">
-                    <option>Chose your class</option>
-                    <option>Chose your class</option>
-                    <option>Chose your class</option>
+                <form class="form-inline" id="trialForm">
+                <input type="text" class="input-small input-style" id="name_popup" name="name" placeholder="Enter your name" required data-msg-required="Please, enter your name">
+                <input type="tel" class="input-small input-style" name="phone" placeholder="Enter your phone" required data-msg-required="Please, enter your phone">
+                <select class="input-style" required data-msg-required="Please, chose your class">
+                    <option value="" disabled selected hidden>Chose your class</option>
+                    <option value="1">Class one</option>
+                    <option value="2">Class two</option>
                 </select>
                     <div class="but-style">
-                <button type="button" class="btn ntb">Try it</button>
+                        <button type="submit" class="btn ntb">Try it</button>
+                        <!--<input type="submit" class="button ntb" value="Try it">-->
+                        <input type="hidden" name="form_type" value="">
                     </div>
                 </form>
                 </div>
@@ -74,7 +76,7 @@
             <p>Our Classes</p>
         </div>
 
-        <div class="feature">
+        <div class="feature" id="blog">
             <div class="block-feature-one">
                 <img src="./img/feature-img-1.jpg">
                 <div class="block-feature-two">
@@ -141,49 +143,274 @@
 
 
         <div class="tab-content">
-        <div class="feature-two gallery-content">
+        <div class="feature-two gallery-content" id="gallery">
             <div class="block-gallery">
                 <a href="./img/gallery-img-1.jpg" data-fancybox>
                 <img src="./img/gallery-img-1.jpg" alt="">
                 </a>
             </div>
             <div class="block-gallery">
-                <img src="./img/gallery-img-2.jpg">
+                <a href="./img/gallery-img-2.jpg" data-fancybox>
+                    <img src="./img/gallery-img-2.jpg" alt="">
+                </a>
             </div>
             <div class="block-gallery">
-                <img src="./img/gallery-img-3.jpg">
+                <a href="./img/gallery-img-3.jpg" data-fancybox>
+                    <img src="./img/gallery-img-3.jpg" alt="">
+                </a>
             </div>
             <div class="block-gallery">
-                <img src="./img/gallery-img-4.jpg">
+                <a href="./img/gallery-img-4.jpg" data-fancybox>
+                    <img src="./img/gallery-img-4.jpg" alt="">
+                </a>
             </div>
         </div>
 
             <div class="feature-two">
                 <div class="block-gallery">
-                    <img src="./img/gallery-img-5.jpg">
+                    <a href="./img/gallery-img-5.jpg" data-fancybox>
+                        <img src="./img/gallery-img-5.jpg" alt="">
+                    </a>
                 </div>
                 <div class="block-gallery">
-                    <img src="./img/gallery-img-6.jpg">
+                    <a href="./img/gallery-img-6.jpg" data-fancybox>
+                        <img src="./img/gallery-img-6.jpg" alt="">
+                    </a>
                 </div>
                 <div class="block-gallery">
-                    <img src="./img/gallery-img-7.jpg">
+                    <a href="./img/gallery-img-7.jpg" data-fancybox>
+                        <img src="./img/gallery-img-7.jpg" alt="">
+                    </a>
                 </div>
                 <div class="block-gallery">
-                    <img src="./img/gallery-img-8.jpg">
+                    <a href="./img/gallery-img-8.jpg" data-fancybox>
+                        <img src="./img/gallery-img-8.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     </div>
 
+    <div class="background-content-three" id="about-us">
+        <div class="feature">
+            <div class="block-feature block-feature-pad">
+                <h1>About us</h1>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</li>
+                    <li>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</li>
+                    <li>ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi</li>
+                    <li>ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei</li>
+                    <li>voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum</li>
+                    <li>loting sokui.</li>
+                </ul>
+            </div>
+            <div class="block-feature">
+                <div id="carusel">
+                    <input type="radio" id="car0" name="car" checked="checked"/>
+                    <div></div>
 
-    <script src="./js/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+                    <input type="radio" id="car1" name="car"/>
+                    <div>
+                        <label for="car0"></label>
+                        <div class="item" style="background-image: url(./img/img-yoga-one.jpg)"></div>
+                    </div>
+
+                    <input type="radio" id="car2" name="car"/>
+                    <div>
+                        <label for="car1"></label>
+                        <div class="item" style="background-image: url(./img/img-yoga-one.jpg)"></div>
+                    </div>
+
+                    <input type="radio" id="car3" name="car"/>
+                    <div>
+                        <label for="car2"></label>
+                        <div class="item" style="background-image: url(./img/img-yoga-one.jpg)"></div>
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+            </div>
+
+    <div class="background-content-four" id="elements">
+        <div class="block-content-four">
+            <div class="feature block-feature-pad">
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four.png">
+                    <h1>IMPROVED OVERALL HEALTH</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-2.png">
+                    <h1>INCREASED CONCENTRATION</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-3.png">
+                    <h1>BLANCE YOUR MIND</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-4.png">
+                    <h1>SLEEP BETTER</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+            </div>
+
+            <div class="feature block-feature-pad-two">
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-5.png">
+                    <h1>WEIGHT LOSS</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-6.png">
+                    <h1>STRENGTHENS YOUR BONES</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-7.png">
+                    <h1>INCREASED FLEXIBILITY</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-8.png">
+                    <h1>LOWER BLOOD PRESSURE</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="background-content-five" id="shop">
+        <div class="block-content-five">
+            <div class="feature">
+                <div class="block-feature">
+
+                    <div class="back-bpp">
+                        <div class="basic-pro-premium">
+                            <img src="./img/basic.png">
+                        </div>
+                    <ul>
+                        <li>ENTRY DATE: MON – FRI</li>
+                        <li>ENTRY TIME: 8A.M – 8P.M</li>
+                        <li>NUTRITION ADVICER: NO</li>
+                    </ul>
+                    <p><a href="#">Buy now</a></p>
+
+                    </div>
+
+                </div>
+                <div class="block-feature">
+                    <div class="back-bpp">
+                        <div class="basic-pro-premium">
+                            <img src="./img/pro.png">
+                        </div>
+                    <ul>
+                        <li>ENTRY DATE: MON – FRI</li>
+                        <li>ENTRY TIME: 8A.M – 8P.M</li>
+                        <li>NUTRITION ADVICER: YES</li>
+                    </ul>
+                    <p><a href="#">Buy now</a></p>
+                    </div>
+                </div>
+                <div class="block-feature">
+                    <div class="back-bpp">
+                        <div class="basic-pro-premium">
+                            <img src="./img/premium.png">
+                        </div>
+                    <ul>
+                        <li>ENTRY DATE: MON – SUN</li>
+                        <li>ENTRY TIME: 8A.M – 8P.M</li>
+                        <li>NUTRITION ADVICER: YES</li>
+                    </ul>
+                    <p><a href="#">Buy now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-content-six">
+        <div class="content-six">
+            <div class="quote">
+                <div class="quote-img">
+                <img src="./img/photo-trainer.png">
+                </div>
+                <div class="quote-text">
+                    <b class="left" style="display: inherit; text-align: left">"</b><h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</h1><b class="right" style="display: inherit; text-align: right">"</b>
+
+                <h2>Trainer</h2>
+                <p>Laura Shepard</p>
+                    <div id="carusel-two">
+                        <input type="radio" id="car0-two" name="car-two" checked="checked"/>
+                        <div></div>
+
+                        <input type="radio" id="car1-two" name="car-two"/>
+                        <div>
+                            <label for="car0-two"></label>
+                            <div class="item" style="background-image: url(./img/sara-taylor.png)"></div>
+                        </div>
+
+                        <input type="radio" id="car2-two" name="car-two"/>
+                        <div>
+                            <label for="car1-two"></label>
+                            <div class="item" style="background-image: url(./img/sara-taylor.png)"></div>
+                        </div>
+
+                        <input type="radio" id="car3-two" name="car-two"/>
+                        <div>
+                            <label for="car2-two"></label>
+                            <div class="item" style="background-image: url(./img/sara-taylor.png)"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </section>
 
 <section class="header">
+    <div class="background-footer">
+        <div class="block-content-footer">
+            <div class="feature">
+                <div class="block-feature">
+                    <h1>About</h1>
+                    <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad m inim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</h2>
+                    <ul>
+                        <li><a class="pinterest" href="#"></a></li>
+                        <li><a class="twitter" href="#"></a></li>
+                        <li><a class="facebook" href="#"></a></li>
+                        <li><a class="google" href="#"></a></li>
+                        <li><a class="instagram" href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="block-feature">
+                    <h1>CONTACT US</h1>
+                    <h2 style="background-image: url(./img/placeholder.png)">5419 Joseph Mountains
+                        Apt. 716</h2>
+                    <p style="background-image: url(./img/phone-call.png)">+1 234 567 89
+                        +1 234 678 90</p>
+                </div>
+                <div class="block-feature pad-feature">
+                    <h2 style="background-image: url(./img/envelope.png)">joga.info@example.com</h2>
+                    <p style="background-image: url(./img/planet-earth.png)">www.example.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="background-footer-last">
+        <div class="caption-footer">
+            <h1>Copyright  ©  2016-2017 Yoga classes</h1>
+        </div>
+    </div>
 </section>
-
+<script src="./js/main.js" type="text/javascript"></script>
 </body>
 </html>

@@ -5,20 +5,20 @@
     <div class="menu-all-header">
     <div class="menu-left-header">
         <ul>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Reservation</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+            <li><a href="#gallery">Gallery</a></li>
         </ul>
     </div>
     <div class="logo-center-header">
-        <img src="../img/logo.png">
+        <img src="./img/logo.png">
         <h1>YOGA</h1>
     </div>
     <div class="menu-right-header">
         <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Elements</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#elements">Elements</a></li>
+            <li><a href="#shop">Shop</a></li>
         </ul>
     </div>
     </div>
@@ -26,21 +26,23 @@
     </nav>
 </div>
 
-    <div class="background-header-two">
+    <div class="background-header-two" id="reservation">
         <div class="background-info-header-two">
             <div class="communications-header-two">
                 <div class="back-all-in">
                 <h3>Trial Class</h3>
-                <form class="form-inline">
-                <input type="text" class="input-small input-style" placeholder="Enter your name">
-                <input type="tel" class="input-small input-style" placeholder="Enter your phone">
-                <select class="input-style">
-                    <option>Chose your class</option>
-                    <option>Chose your class</option>
-                    <option>Chose your class</option>
+                <form class="form-inline" id="trialForm">
+                <input type="text" class="input-small input-style" id="name_popup" name="name" placeholder="Enter your name" required data-msg-required="Please, enter your name">
+                <input type="tel" class="input-small input-style" name="phone" placeholder="Enter your phone" required data-msg-required="Please, enter your phone">
+                <select class="input-style" required data-msg-required="Please, chose your class">
+                    <option value="" disabled selected hidden>Chose your class</option>
+                    <option value="1">Class one</option>
+                    <option value="2">Class two</option>
                 </select>
                     <div class="but-style">
-                <button type="button" class="btn ntb">Try it</button>
+                        <button type="submit" class="btn ntb">Try it</button>
+                        <!--<input type="submit" class="button ntb" value="Try it">-->
+                        <input type="hidden" name="form_type" value="">
                     </div>
                 </form>
                 </div>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>YOGA</title>
     <link href="./css/main.css" rel="stylesheet" type="text/css">
-    <link href="./fancybox/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+    <link href="./css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
@@ -18,7 +18,7 @@
             <p>Our Classes</p>
         </div>
 
-        <div class="feature">
+        <div class="feature" id="blog">
             <div class="block-feature-one">
                 <img src="./img/feature-img-1.jpg">
                 <div class="block-feature-two">
@@ -85,47 +85,239 @@
 
 
         <div class="tab-content">
-        <div class="feature-two gallery-content">
+        <div class="feature-two gallery-content" id="gallery">
             <div class="block-gallery">
                 <a href="./img/gallery-img-1.jpg" data-fancybox>
                 <img src="./img/gallery-img-1.jpg" alt="">
                 </a>
             </div>
             <div class="block-gallery">
-                <img src="./img/gallery-img-2.jpg">
+                <a href="./img/gallery-img-2.jpg" data-fancybox>
+                    <img src="./img/gallery-img-2.jpg" alt="">
+                </a>
             </div>
             <div class="block-gallery">
-                <img src="./img/gallery-img-3.jpg">
+                <a href="./img/gallery-img-3.jpg" data-fancybox>
+                    <img src="./img/gallery-img-3.jpg" alt="">
+                </a>
             </div>
             <div class="block-gallery">
-                <img src="./img/gallery-img-4.jpg">
+                <a href="./img/gallery-img-4.jpg" data-fancybox>
+                    <img src="./img/gallery-img-4.jpg" alt="">
+                </a>
             </div>
         </div>
 
             <div class="feature-two">
                 <div class="block-gallery">
-                    <img src="./img/gallery-img-5.jpg">
+                    <a href="./img/gallery-img-5.jpg" data-fancybox>
+                        <img src="./img/gallery-img-5.jpg" alt="">
+                    </a>
                 </div>
                 <div class="block-gallery">
-                    <img src="./img/gallery-img-6.jpg">
+                    <a href="./img/gallery-img-6.jpg" data-fancybox>
+                        <img src="./img/gallery-img-6.jpg" alt="">
+                    </a>
                 </div>
                 <div class="block-gallery">
-                    <img src="./img/gallery-img-7.jpg">
+                    <a href="./img/gallery-img-7.jpg" data-fancybox>
+                        <img src="./img/gallery-img-7.jpg" alt="">
+                    </a>
                 </div>
                 <div class="block-gallery">
-                    <img src="./img/gallery-img-8.jpg">
+                    <a href="./img/gallery-img-8.jpg" data-fancybox>
+                        <img src="./img/gallery-img-8.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
     </div>
 
+    <div class="background-content-three" id="about-us">
+        <div class="feature">
+            <div class="block-feature block-feature-pad">
+                <h1>About us</h1>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</li>
+                    <li>eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim</li>
+                    <li>ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi</li>
+                    <li>ut aliquip ex ea commodo consequat. Duis aute irure dolor it in lorei</li>
+                    <li>voluptate velit esse cillum dolore eu fugiat nulla pariatur lorem ispum</li>
+                    <li>loting sokui.</li>
+                </ul>
+            </div>
+            <div class="block-feature">
+                <div id="carusel">
+                    <input type="radio" id="car0" name="car" checked="checked"/>
+                    <div></div>
 
-    <script src="./js/partials/jquery-3.2.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+                    <input type="radio" id="car1" name="car"/>
+                    <div>
+                        <label for="car0"></label>
+                        <div class="item" style="background-image: url(./img/img-yoga-one.jpg)"></div>
+                    </div>
+
+                    <input type="radio" id="car2" name="car"/>
+                    <div>
+                        <label for="car1"></label>
+                        <div class="item" style="background-image: url(./img/img-yoga-one.jpg)"></div>
+                    </div>
+
+                    <input type="radio" id="car3" name="car"/>
+                    <div>
+                        <label for="car2"></label>
+                        <div class="item" style="background-image: url(./img/img-yoga-one.jpg)"></div>
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+            </div>
+
+    <div class="background-content-four" id="elements">
+        <div class="block-content-four">
+            <div class="feature block-feature-pad">
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four.png">
+                    <h1>IMPROVED OVERALL HEALTH</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-2.png">
+                    <h1>INCREASED CONCENTRATION</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-3.png">
+                    <h1>BLANCE YOUR MIND</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-4.png">
+                    <h1>SLEEP BETTER</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+            </div>
+
+            <div class="feature block-feature-pad-two">
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-5.png">
+                    <h1>WEIGHT LOSS</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-6.png">
+                    <h1>STRENGTHENS YOUR BONES</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-7.png">
+                    <h1>INCREASED FLEXIBILITY</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+                <div class="block-feature">
+                    <img src="./img/img-background-content-four-8.png">
+                    <h1>LOWER BLOOD PRESSURE</h1>
+                    <p>Enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea com.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="background-content-five" id="shop">
+        <div class="block-content-five">
+            <div class="feature">
+                <div class="block-feature">
+
+                    <div class="back-bpp">
+                        <div class="basic-pro-premium">
+                            <img src="./img/basic.png">
+                        </div>
+                    <ul>
+                        <li>ENTRY DATE: MON – FRI</li>
+                        <li>ENTRY TIME: 8A.M – 8P.M</li>
+                        <li>NUTRITION ADVICER: NO</li>
+                    </ul>
+                    <p><a href="#">Buy now</a></p>
+
+                    </div>
+
+                </div>
+                <div class="block-feature">
+                    <div class="back-bpp">
+                        <div class="basic-pro-premium">
+                            <img src="./img/pro.png">
+                        </div>
+                    <ul>
+                        <li>ENTRY DATE: MON – FRI</li>
+                        <li>ENTRY TIME: 8A.M – 8P.M</li>
+                        <li>NUTRITION ADVICER: YES</li>
+                    </ul>
+                    <p><a href="#">Buy now</a></p>
+                    </div>
+                </div>
+                <div class="block-feature">
+                    <div class="back-bpp">
+                        <div class="basic-pro-premium">
+                            <img src="./img/premium.png">
+                        </div>
+                    <ul>
+                        <li>ENTRY DATE: MON – SUN</li>
+                        <li>ENTRY TIME: 8A.M – 8P.M</li>
+                        <li>NUTRITION ADVICER: YES</li>
+                    </ul>
+                    <p><a href="#">Buy now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="background-content-six">
+        <div class="content-six">
+            <div class="quote">
+                <div class="quote-img">
+                <img src="./img/photo-trainer.png">
+                </div>
+                <div class="quote-text">
+                    <b class="left" style="display: inherit; text-align: left">"</b><h1> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation toui ullamcomi laboris nisi ut aliquip ex ea commodo consequat.</h1><b class="right" style="display: inherit; text-align: right">"</b>
+
+                <h2>Trainer</h2>
+                <p>Laura Shepard</p>
+                    <div id="carusel-two">
+                        <input type="radio" id="car0-two" name="car-two" checked="checked"/>
+                        <div></div>
+
+                        <input type="radio" id="car1-two" name="car-two"/>
+                        <div>
+                            <label for="car0-two"></label>
+                            <div class="item" style="background-image: url(./img/sara-taylor.png)"></div>
+                        </div>
+
+                        <input type="radio" id="car2-two" name="car-two"/>
+                        <div>
+                            <label for="car1-two"></label>
+                            <div class="item" style="background-image: url(./img/sara-taylor.png)"></div>
+                        </div>
+
+                        <input type="radio" id="car3-two" name="car-two"/>
+                        <div>
+                            <label for="car2-two"></label>
+                            <div class="item" style="background-image: url(./img/sara-taylor.png)"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </section>
 
 //= template/footer.html
-
+<script src="./js/main.js" type="text/javascript"></script>
 </body>
 </html>

@@ -1,3 +1,3 @@
-/**
- * Created by Cantu on 25.10.2017.
- */
+jQuery(function ($) {
+    $("#trialForm").validate();
+});

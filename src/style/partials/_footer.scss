@@ -1,0 +1,113 @@
+.background-footer {
+  background-color: #5b6ceb;
+  height: auto;
+
+  .block-content-footer {
+    padding-top: 100px;
+
+    .feature {
+      box-sizing: border-box;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+
+
+      .block-feature {
+        width: 33.33%;
+        box-sizing: border-box;
+        float: left;
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        @include respond(smart) {
+          width: 100%;
+        }
+
+        @include respond(phone) {
+          width: 100%;
+        }
+
+        h1 {
+          font-family: "Open Sans Bold",Arial,sans-serif;
+          font-size: 18px;
+          color: #fff;
+          text-transform: uppercase;
+          padding-bottom: 30px;
+        }
+
+        h2 {
+          font-family: "Open Sans Regular",Arial,sans-serif;
+          font-size: 14px;
+          color: #fff;
+          display: inline-block;
+          background-repeat: no-repeat;
+          width: 260px;
+          height: 40px;
+        }
+
+        p {
+          font-family: "Open Sans Regular",Arial,sans-serif;
+          font-size: 14px;
+          color: #fff;
+          display: inline-block;
+          background-repeat: no-repeat;
+          width: 260px;
+          height: 25px;
+        }
+
+        ul {
+          padding-top: 50px;
+          padding-bottom: 100px;
+
+          li {
+            display: inline-block;
+
+            a {
+              background: url("../img/social.png") no-repeat;
+              display: inline-block;
+              width: 34px;
+              height: 21px;
+            }
+
+            .twitter {
+              background-position: -33px;
+            }
+
+            .facebook {
+              background-position: -71px;
+            }
+
+            .google {
+              background-position: -106px;
+            }
+
+            .instagram {
+              background-position: -142px;
+            }
+          }
+        }
+      }
+
+      .pad-feature {
+        padding-top: 50px;
+      }
+    }
+}
+}
+
+.background-footer-last {
+  background-color: #5363d8;
+  height: auto;
+
+  .caption-footer {
+    text-align: center;
+
+    h1 {
+      font-family: "Open Sans Regular",Arial,sans-serif;
+      font-size: 16px;
+      color: #b7bffc;
+      padding: 50px 0;
+    }
+  }
+}

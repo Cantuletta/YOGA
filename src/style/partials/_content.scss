@@ -73,6 +73,10 @@
     }
   }
 
+  .tab-content {
+    text-align: center;
+  }
+
   .gallery-content {
     padding-top: 100px;
   }
@@ -90,6 +94,7 @@
         padding-right: 15px;
         padding-left: 15px;
 
+
         @include respond(smart) {
           width: 50%;
         }
@@ -100,3 +105,308 @@
       }
     }
   }
+
+.background-content-three {
+  background-color: #fff;
+  height: auto;
+
+  .feature {
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 60px;
+    display: inline-block;
+    width: 100%;
+
+    .block-future-pad {
+      padding-top: 90px;
+    }
+
+    .block-feature {
+      width: 50%;
+      box-sizing: border-box;
+      float: left;
+      position: relative;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      @include respond(smart) {
+        width: 100%;
+      }
+
+      @include respond(phone) {
+        width: 100%;
+      }
+
+      h1 {
+        font-family: "Open Sans Bold",Arial,sans-serif;
+        font-size: 30px;
+        color: #5b6ceb;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+      }
+
+      ul {
+
+        li {
+          font-family: "Open Sans Regular",Arial,sans-serif;
+          font-size: 14px;
+          color: #555;
+        }
+      }
+    }
+  }
+}
+
+.background-content-four {
+  background: url("../img/background-content-four.jpg") no-repeat;
+  height: auto;
+  background-size: cover;
+  
+  .block-content-four {
+
+
+    .block-feature-pad {
+      padding-top: 100px;
+    }
+
+    .block-feature-pad-two {
+      padding-top: 30px;
+      padding-bottom: 50px;
+    }
+    
+    .feature {
+      box-sizing: border-box;
+      text-align: center;
+      display: inline-block;
+      
+      .block-feature {
+        width: 25%;
+        box-sizing: border-box;
+        float: left;
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+
+        @include respond(smart) {
+          width: 50%;
+        }
+
+        @include respond(phone) {
+          width: 100%;
+        }
+
+        h1 {
+          font-family: "Open Sans Bold",Arial,sans-serif;
+          font-size: 18px;
+          color: #fff;
+          text-transform: uppercase;
+          padding-bottom: 15px;
+        }
+
+        p {
+          font-family: "Open Sans Regular",Arial,sans-serif;
+          font-size: 16px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.background-content-five {
+  background-color: #e4dfdf;
+  height: auto;
+
+  .block-content-five {
+
+    .feature {
+      box-sizing: border-box;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+
+      .block-feature {
+        width: 33.33%;
+        box-sizing: border-box;
+        float: left;
+        position: relative;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 100px;
+
+
+
+        @include respond(smart) {
+          width: 100%;
+        }
+
+        @include respond(phone) {
+          width: 100%;
+        }
+
+        .basic-pro-premium {
+          background-color: #5b6ceb;
+          display: inline-block;
+          width: auto;
+          height: 100px;
+          padding: 50px;
+          border-radius: 20px 20px 0 0;
+          text-align: center;
+
+
+
+          img {
+            width: 50%;
+          }
+        }
+
+        .back-bpp {
+          background-color: #fff;
+          display: inline-block;
+          width: auto;
+          height: 430px;
+          border-radius: 20px 20px 0 0;
+
+          ul {
+            padding-top: 50px;
+            padding-bottom: 30px;
+
+            li {
+              font-family: "Open Sans Regular", Arial, sans-serif;
+              font-size: 16px;
+              color: #555;
+              text-transform: uppercase;
+              line-height: 60px;
+            }
+          }
+
+          p {
+            font-family: "Open Sans Semibold", Arial, sans-serif;
+            font-size: 18px;
+            color: #fff;
+            background-color: #5b6ceb;
+            display: inline-block;
+            width: 150px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 15px;
+
+            a {
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.background-content-six {
+  background-color: #e4dfdf;
+  height: auto;
+
+  .content-six {
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 200px;
+
+    .quote {
+      background-color: #fff;
+      height: auto;
+      width: 89%;
+      display: inline-block;
+
+      @include respond(smart) {
+        width: 100%;
+
+      }
+
+      @include respond(phone) {
+        width: 100%;
+
+      }
+
+      .quote-img {
+        display: inline-block;
+        width: 30%;
+        float: left;
+        padding-top: 40px;
+
+        @include respond(smart) {
+          width: 100%;
+          text-align: center;
+        }
+
+        @include respond(phone) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .quote-text {
+        display: inline-block;
+        width: 60%;
+        float: left;
+        padding-top: 50px;
+
+        @include respond(smart) {
+          width: 100%;
+          text-align: center;
+        }
+
+        @include respond(phone) {
+          width: 100%;
+          text-align: center;
+        }
+
+        h1 {
+          font-family: "Open Sans Italic", Arial, sans-serif;
+          font-size: 14px;
+          color: #555;
+        }
+
+        h2 {
+          font-family: "Open Sans Regular", Arial, sans-serif;
+          font-size: 14px;
+          color: #777;
+          text-align: left;
+
+          @include respond(smart) {
+            text-align: center;
+          }
+
+          @include respond(phone) {
+            text-align: center;
+          }
+        }
+
+        p {
+          font-family: "Open Sans Bold", Arial, sans-serif;
+          font-size: 14px;
+          color: #5b6ceb;
+          text-align: left;
+          padding-bottom: 30px;
+
+          @include respond(smart) {
+            text-align: center;
+          }
+
+          @include respond(phone) {
+            text-align: center;
+          }
+        }
+
+        b {
+          color: #5b6ceb;
+          font-size: 40px;
+          font-weight: bolder;
+
+        }
+      }
+    }
+  }
+}
